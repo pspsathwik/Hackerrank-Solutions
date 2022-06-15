@@ -1,0 +1,21 @@
+// C++
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+  int t;
+  cin>>t;
+  while(t--){
+    int f,b,t,d;
+    cin>>f>>b>>t>>d;
+    int total =0;
+    while(d>b){
+      total = total + (b+f);
+      d = d-(b-f);
+    }
+    total=total+d;
+    cout<<total*t<<endl;
+  }
+  return 0;
+}
